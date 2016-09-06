@@ -75,6 +75,11 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_FSTAB := device/semc/msm7x30-common/rootdir/fstab.semc
 TARGET_RECOVERY_DEVICE_DIRS += device/semc/msm7x30-common
 TARGET_RECOVERY_DEVICE_MODULES := libinit_semc
+TARGET_MTD_BY_NAME := true
+TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/bq27520
+TW_EXCLUDE_SUPERSU := true
+TW_HAS_NO_RECOVERY_PARTITION := true
+TW_USE_TOOLBOX := true
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/semc/msm7x30

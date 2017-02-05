@@ -75,6 +75,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_FSTAB := device/semc/msm7x30-common/rootdir/fstab.semc
 TARGET_RECOVERY_DEVICE_DIRS += device/semc/msm7x30-common
 TARGET_RECOVERY_DEVICE_MODULES := libinit_semc
+RECOVERY_VARIANT := twrp
 TARGET_MTD_BY_NAME := true
 TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/bq27520
 TW_EXCLUDE_SUPERSU := true

@@ -94,6 +94,15 @@ BOARD_KERNEL_CMDLINE := # This is ignored by sony's bootloader
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_KERNEL_PAGESIZE := 131072
 
+# Enable dex pre-optimization
+ifeq ($(HOST_OS),linux)
+    ifeq ($(WITH_DEXPREOPT),)
+        WITH_DEXPREOPT := true
+        WITH_DEXPREOPT_COMP := false
+        WITH_DEXPREOPT_PIC := true
+    endif
+endif
+
 # Images
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
